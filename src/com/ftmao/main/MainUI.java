@@ -16,8 +16,6 @@ public class MainUI {
 
 			out[k] = 100;
 		}
-		
-		java.util.Arrays.sort(out);
 
 		ScreenFrame f = new ScreenFrame();
 		final PaintPanel p = new PaintPanel();
