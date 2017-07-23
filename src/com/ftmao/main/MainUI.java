@@ -19,6 +19,7 @@ public class MainUI {
 
 		ScreenFrame f = new ScreenFrame();
 		final PaintPanel p = new PaintPanel();
+		//add some comment
 		
 		f.add(p);
 		f.showOut();
