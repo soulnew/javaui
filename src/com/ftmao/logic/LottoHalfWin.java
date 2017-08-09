@@ -5,6 +5,7 @@ import java.util.Random;
 public class LottoHalfWin {
 
 	static int beginvalue = 10;
+	//log
 
 	public static void caculateMoney(int[] peoples, boolean pos) {
 		Random r = new Random();
