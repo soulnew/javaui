@@ -33,9 +33,9 @@ public class MainLottoHalfWin {
 					LottoHalfWin.caculateMoneyRecharge(out, true);
 					// java.util.Arrays.sort(out);
 					System.out.println("i" + l + " Host:" + out[out.length - 1]);
-					if (true) {
-						continue;
-					}
+//					if (true) {
+//						continue;
+//					}
 					p.inputData(out);
 					p.repaint();
 
