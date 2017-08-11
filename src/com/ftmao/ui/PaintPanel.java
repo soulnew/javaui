@@ -20,6 +20,11 @@ public class PaintPanel extends JPanel {
 
 		panelHight = (int) height - 100;
 		pannelwidth = (int) width - 100;
+		
+		v=new String[(int)height/10];
+		for(int i=0;i<v.length;i++){
+			v[i]=Integer.toString(i*10);
+		}
 	}
 
 	int panelHight;
@@ -27,7 +32,7 @@ public class PaintPanel extends JPanel {
 	String defaultLabel="No.";
 
 	int[] datas;
-	String[] v = { "10", "20", "30", "40", "50", "60", "70", "80", "90", "100" };
+	String[] v = null;
 	String[] h = null;
 
 	int space = 20;
@@ -91,7 +96,7 @@ public class PaintPanel extends JPanel {
 
 		if (v != null) {
 			for (int i = 0; i < v.length; i++) {
-				g2.drawChars(v[i].toCharArray(), 0, v[i].length(), space, panelHight-v.length*i);
+				g2.drawChars(v[i].toCharArray(), 0, v[i].length(), space, panelHight-10*i);
 			}
 
 		}
